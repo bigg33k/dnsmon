@@ -6,9 +6,9 @@ python-statsd and php-statsd are required for these to work.
 
 I used this crontab to manage things:
 
-m h  dom mon dow   command
+`m h  dom mon dow   command
 */1 * * * * /usr/bin/php /home/pi/dnsmon/dnstest.php >>/home/pi/dnsmon/logs/dnsapi.log
 @reboot /usr/bin/python /home/pi/dnsmon/dnsedge-ns1.py >>/home/pi/dnsmon/logs/dnsedge-ns1.log
 @reboot /usr/bin/python /home/pi/dnsmon/dnsedge-ns2.py >>/home/pi/dnsmon/logs/dnsedge-ns2.log
 @reboot /usr/bin/python /home/pi/dnsmon/dnsedge-ns3.py >>/home/pi/dnsmon/logs/dnsedge-ns3.log
-@reboot /usr/bin/python /home/pi/dnsmon/dnsedge-ns4.py >>/home/pi/dnsmon/logs/dnsedge-ns4.log
+@reboot /usr/bin/python /home/pi/dnsmon/dnsedge-ns4.py >>/home/pi/dnsmon/logs/dnsedge-ns4.log`
