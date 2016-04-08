@@ -4,8 +4,8 @@ The results are pushed to graphite using statsd.
 
 python-statsd and php-statsd are required for these to work.
 
-
-# m h  dom mon dow   command
+I used this crontab to manage things
+m h  dom mon dow   command
 */1 * * * * /usr/bin/php /home/pi/dnsmon/dnstest.php >>/home/pi/dnsmon/logs/dnsapi.log
 @reboot /usr/bin/python /home/pi/dnsmon/dnsedge-ns1.py >>/home/pi/dnsmon/logs/dnsedge-ns1.log
 @reboot /usr/bin/python /home/pi/dnsmon/dnsedge-ns2.py >>/home/pi/dnsmon/logs/dnsedge-ns2.log
